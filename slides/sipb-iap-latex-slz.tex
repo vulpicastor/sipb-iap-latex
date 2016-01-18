@@ -1,0 +1,55 @@
+% !TeX program = xelatex
+% !TeX encoding = UTF-8
+
+\documentclass{beamer}
+
+\usepackage{fontspec}
+\usepackage{xunicode}
+\defaultfontfeatures{Ligatures=TeX}
+\setmainfont{TeX Gyre Pagella}
+\setsansfont{Linux Biolinum O}
+\setmonofont[Scale=MatchLowercase]{DejaVu Sans Mono}
+
+\usepackage{amsmath}
+\usepackage{unicode-math}
+\setmathfont{TeX Gyre Pagella Math}
+
+\usepackage{polyglossia}
+\setdefaultlanguage[variant=american]{english}
+\usepackage{csquotes}
+
+\usepackage{hyperref}
+
+\title{Introduction to \rmfamily\LaTeX}
+\author{Lizhou Sha\\\href{mailto:slz@mit.edu}{slz@mit.edu}}
+
+\begin{document}
+
+\frame{\titlepage}
+
+\begin{frame}
+\frametitle{Outline}
+\tableofcontents[pausesections]
+\end{frame}
+
+\section{Introduction}
+
+\begin{frame}{A brief history}
+Donald Knuth
+\end{frame}
+
+\section{Wrapping Up}
+
+\begin{frame}
+\frametitle{Resources}
+\begin{itemize}
+    \item Tobias Oetiker et al. The Not So Short Introduction to {\rmfamily\LaTeX} 2$_{\epsilon}$ (\texttt{lshort}).\\
+        \url{https://tobi.oetiker.ch/lshort/lshort.pdf}
+    \item {\rmfamily\LaTeX} on Wikibooks\\
+        \url{https://en.wikibooks.org/wiki/LaTeX}
+    \item Michael Downes. Short Math Guide for {\rmfamily\LaTeX}.\\
+        \url{ftp://ftp.ams.org/ams/doc/amsmath/short-math-guide.pdf}
+\end{itemize}
+\end{frame}
+
+\end{document}

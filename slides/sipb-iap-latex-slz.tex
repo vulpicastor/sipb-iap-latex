@@ -3,16 +3,19 @@
 
 \documentclass{beamer}
 
+\usecolortheme{beaver}
+
 \usepackage{fontspec}
 \usepackage{xunicode}
+\usepackage{mathpazo}
 \defaultfontfeatures{Ligatures=TeX}
 \setmainfont{TeX Gyre Pagella}
 \setsansfont{Linux Biolinum O}
 \setmonofont[Scale=MatchLowercase]{DejaVu Sans Mono}
 
 \usepackage{amsmath}
-\usepackage{unicode-math}
-\setmathfont{TeX Gyre Pagella Math}
+%\usepackage{unicode-math}
+%\setmathfont{TeX Gyre Pagella Math}
 
 \usepackage{polyglossia}
 \setdefaultlanguage[variant=american]{english}
@@ -20,35 +23,88 @@
 
 \usepackage{hyperref}
 
-\title{Introduction to \rmfamily\LaTeX}
+\newcommand{\pTeX}{{\rmfamily\TeX}}
+\newcommand{\pLaTeX}{{\rmfamily\LaTeX}}
+\newcommand{\pLaTeXe}{{\rmfamily\LaTeXe}}
+
+\title{Introduction to \pLaTeX}
 \author{Lizhou Sha\\\href{mailto:slz@mit.edu}{slz@mit.edu}}
 
 \begin{document}
 
 \frame{\titlepage}
 
-\begin{frame}
-\frametitle{Outline}
-\tableofcontents[pausesections]
-\end{frame}
+%\begin{frame}
+%\frametitle{Outline}
+%\tableofcontents[pausesections]
+%\end{frame}
 
 \section{Introduction}
 
 \begin{frame}{A brief history}
-Donald Knuth
+\begin{itemize}
+    \item \alert{\rmfamily\TeX} was created by Donald Knuth in 1977 to bring state-of-the art typography to digital printing (especially for typesetting technical materials).
+        \begin{itemize}
+            \item Famed for being extremely stable and bug free.
+            \item Current release: 3.14159265 in January 2014.
+        \end{itemize}
+    \item \alert{\pLaTeX} was created by Leslie Lamport in 1985 as high-level templates on top of \pLaTeX.
+        \begin{itemize}
+            \item Current release: \pLaTeXe
+        \end{itemize}
+\end{itemize}
+\pLaTeX\ is pronounced Lah-tech or Lay-tech or\ldots
 \end{frame}
+
+\begin{frame}{\pLaTeX\ is\ldots}
+\ldots an advanced typesetting system
+\begin{itemize}
+    \item Uniform styles
+    \item Structural specifications
+    \item Reference tracking
+    \item Bibliography
+    \item Highly extensible
+    \item Integrates well with scripts
+\end{itemize}
+\end{frame}
+
+\begin{frame}{\pLaTeX\ is not\ldots}
+\ldots a word processor, or a text editor, or a typewriter!
+\begin{itemize}
+    \item \pLaTeX\ takes in a text file, and dutifully produces exactly what you have specified.
+    \item Use your favorite text editor, or an integrated \pLaTeX\ environment.
+\end{itemize}
+\begin{quotation}
+You must unlearn what you have learned.
+\end{quotation}
+\end{frame}
+
+\begin{frame}{Why \pLaTeX?}
+
+\end{frame}
+
 
 \section{Wrapping Up}
 
-\begin{frame}
-\frametitle{Resources}
+\begin{frame}{Resources}
 \begin{itemize}
-    \item Tobias Oetiker et al. The Not So Short Introduction to {\rmfamily\LaTeX} 2$_{\epsilon}$ (\texttt{lshort}).\\
+    \item Tobias Oetiker et al. The Not So Short Introduction to {\rmfamily\LaTeXe} (\texttt{lshort}).\\
         \url{https://tobi.oetiker.ch/lshort/lshort.pdf}
     \item {\rmfamily\LaTeX} on Wikibooks\\
         \url{https://en.wikibooks.org/wiki/LaTeX}
     \item Michael Downes. Short Math Guide for {\rmfamily\LaTeX}.\\
         \url{ftp://ftp.ams.org/ams/doc/amsmath/short-math-guide.pdf}
+\end{itemize}
+\end{frame}
+
+\begin{frame}{To get started}
+\begin{itemize}
+    \item These slides can be found at:
+        \url{https://slz.scripts.mit.edu/Public/sipb/sipb-iap-latex-2016.pdf}
+    \item ModernCV examples:
+        \url{https://www.ctan.org/tex-archive/macros/latex/contrib/moderncv/examples}
+    \item You can use this slideshow as a template of your own slides!
+        \url{https://github.com/vulpicastor/sipb-iap-latex}
 \end{itemize}
 \end{frame}
 
